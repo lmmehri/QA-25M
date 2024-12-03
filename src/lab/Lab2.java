@@ -8,24 +8,28 @@ public class Lab2 extends Lab1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\lmmeh\\OneDrive\\Desktop\\QA_24\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		
-		//webelement locatorwith ID
+		//web element locator with ID
 		
-		driver.findElement(By.id("name")).sendKeys("Hello Team");
+		//driver.findElement(By.id("name")).sendKeys("Hi Mani");
 		
 		//locate by name
-		driver.findElement(By.name("enter name")).sendKeys("Name locator");
+		//driver.findElement(By.name("enter name")).sendKeys("Name locator");
 		
 		//locator with class
-		driver.findElement(By.className("inputs")).sendKeys("class Name locator");
+		//driver.findElement(By.className("inputs")).sendKeys("class Name locator");
 		
 		//link locator
-		driver.findElement(By.linkText("Free Access to interviewQues/ResumeAssistance/material")).click();
-		driver.findElement(By.partialLinkText("interviewQues/ResumeAssistance/")).click();
+		//driver.findElement(By.linkText("Career focussed QA meetup by RahulShetty at Bangalore.check details")).click();
+		//driver.findElement(By.partialLinkText("meetup by RahulShetty at Bangalore")).click();
 		// css selector locator
-		driver.findElement(By.cssSelector("input[id = name]")).click();
+		//driver.findElement(By.cssSelector("input[id = 'name']")).sendKeys("css selector");
+		
+		driver.findElement(By.xpath("//input[@id = 'name']")).sendKeys("xpath selector");
 
 	}
 
