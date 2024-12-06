@@ -34,10 +34,7 @@ public class E2E {
 			destsearchResuls.click();
 	     
 	   
-		driver.findElement(By.xpath("//*[@id='destination-city-input']")).sendKeys(Keys.ARROW_DOWN);
+		//driver.findElement(By.xpath("//*[@id='destination-city-input']")).sendKeys(Keys.ARROW_DOWN);
 	}
 
 }
-////*[@id="destination-dropdown"]/div[2]/div/div/div[2]/div[2]/div/span[1]/span
-//*[@id="destination-dropdown"]/div[2]/div/div/div[1]
-//*[@id="destination-city-input"]//*[@id="destination-dropdown"]/div[2]/div/div/div[2]
