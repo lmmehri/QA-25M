@@ -28,46 +28,28 @@ public class lab9TestNgAssig {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Aman");
 
-        // Click the alert button
-        driver.findElement(By.xpath("//input[@id='alertbtn']")).click();
-
-        // Get the alert message
-        String alertMessage = driver.switchTo().alert().getText();
-        System.out.println("Alert message: " + alertMessage);
-
-        // Pause for demonstration purposes (use WebDriverWait instead in real scenarios)
-        Thread.sleep(2000);
-		
-	}
-		
-	
-	@Test    
-	public void handleC0nfirm() throws InterruptedException {
-		// Click the alert button
-        driver.findElement(By.xpath("//input[@id='confirmbtn']")).click();
-
-        // Get the alert message
-        String confirmMessage = driver.switchTo().alert().getText();
-        System.out.println("Alert message: " + confirmMessage);
-                
-        // Pause for demonstration purposes (use WebDriverWait instead in real scenarios)
-        Thread.sleep(2000);
-
-        // Accept the alert
-        driver.switchTo().alert().accept();
-	}
-	
-     @Test 
-     public void handleConfirm() throws InterruptedException {// Click the alert button
-         driver.findElement(By.xpath("//input[@id='confirmbtn']")).click();
-       
+		 driver.findElement(By.xpath("//input[@id='confirmbtn']")).click();
+	       
          // Get the alert message
          String confirmMessage = driver.switchTo().alert().getText();
          System.out.println("Confirm message: " + confirmMessage);
 
          // Pause for demonstration purposes (use WebDriverWait instead in real scenarios)
          Thread.sleep(2000);
-    	 
+		
+	}
+		
+	
+	@Test    
+	public void handleC0nfirm() throws InterruptedException {
+		
+        // Accept the alert
+        driver.switchTo().alert().accept();
+	}
+	
+     @Test 
+     public void handleConfirm() throws InterruptedException {// Click the alert button
+            	 
     	 driver.switchTo().alert().dismiss();
      
 	}
