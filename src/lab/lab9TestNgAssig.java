@@ -22,18 +22,11 @@ public class lab9TestNgAssig {
 }
 		
 	@BeforeMethod
-	public void beforeTestCode() {
+	public void beforeTestCode() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\lmmeh\\OneDrive\\Desktop\\QA_24\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
 		driver =new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-		
-	}
-		
-	
-	@Test    
-	public void handleAlert() throws InterruptedException {
-			        // Type name in the name field
-        driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Aman");
+		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Aman");
 
         // Click the alert button
         driver.findElement(By.xpath("//input[@id='alertbtn']")).click();
@@ -44,24 +37,37 @@ public class lab9TestNgAssig {
 
         // Pause for demonstration purposes (use WebDriverWait instead in real scenarios)
         Thread.sleep(2000);
+		
+	}
+		
+	
+	@Test    
+	public void handleC0nfirm() throws InterruptedException {
+		// Click the alert button
+        driver.findElement(By.xpath("//input[@id='confirmbtn']")).click();
+
+        // Get the alert message
+        String confirmMessage = driver.switchTo().alert().getText();
+        System.out.println("Alert message: " + confirmMessage);
+                
+        // Pause for demonstration purposes (use WebDriverWait instead in real scenarios)
+        Thread.sleep(2000);
 
         // Accept the alert
-        driver.switchTo().alert().accept(); 
+        driver.switchTo().alert().accept();
 	}
 	
      @Test 
-     public void handleConfirm() throws InterruptedException {
-    	 driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Aman");
-
-         // Click the alert button
-         driver.findElement(By.xpath("//input[@id='alertbtn']")).click();
-
+     public void handleConfirm() throws InterruptedException {// Click the alert button
+         driver.findElement(By.xpath("//input[@id='confirmbtn']")).click();
+       
          // Get the alert message
-         String alertMessage = driver.switchTo().alert().getText();
-         System.out.println("Alert message: " + alertMessage);
+         String confirmMessage = driver.switchTo().alert().getText();
+         System.out.println("Confirm message: " + confirmMessage);
 
          // Pause for demonstration purposes (use WebDriverWait instead in real scenarios)
          Thread.sleep(2000);
+    	 
     	 driver.switchTo().alert().dismiss();
      
 	}

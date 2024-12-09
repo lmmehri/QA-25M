@@ -1,41 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-09T00:08:29 EST" name="Default suite" finished-at="2024-12-09T00:08:50 EST" duration-ms="20737">
+  <suite started-at="2024-12-09T00:56:59 EST" name="Default suite" finished-at="2024-12-09T00:57:20 EST" duration-ms="20394">
     <groups>
     </groups>
-    <test started-at="2024-12-09T00:08:29 EST" name="Default test" finished-at="2024-12-09T00:08:50 EST" duration-ms="20737">
+    <test started-at="2024-12-09T00:56:59 EST" name="Default test" finished-at="2024-12-09T00:57:20 EST" duration-ms="20394">
       <class name="lab.lab9TestNgAssig">
-        <test-method is-config="true" signature="beforeTestsetup()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:29 EST" name="beforeTestsetup" finished-at="2024-12-09T00:08:29 EST" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="beforeTestsetup()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:57:00 EST" name="beforeTestsetup" finished-at="2024-12-09T00:57:00 EST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestsetup -->
-        <test-method is-config="true" signature="beforeTestCode()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:29 EST" name="beforeTestCode" finished-at="2024-12-09T00:08:36 EST" duration-ms="7253" status="PASS">
+        <test-method is-config="true" signature="beforeTestCode()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:57:00 EST" name="beforeTestCode" finished-at="2024-12-09T00:57:10 EST" duration-ms="10188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestCode -->
-        <test-method signature="handleAlert()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:36 EST" name="handleAlert" finished-at="2024-12-09T00:08:39 EST" duration-ms="2918" status="PASS">
+        <test-method signature="handleC0nfirm()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:57:10 EST" name="handleC0nfirm" finished-at="2024-12-09T00:57:10 EST" duration-ms="38" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Hello Aman, share this practice page and share your knowledge}
+  (Session info: chrome=131.0.6778.109): Hello Aman, share this practice page and share your knowledge
+Build info: version: '4.26.0', revision: '69f9e5e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [782ab4c914c9b2955e1b7897c4e13d83, findElement {value=//input[@id='confirmbtn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\lmmeh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64093/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 782ab4c914c9b2955e1b7897c4e13d83]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Hello Aman, share this practice page and share your knowledge}
+  (Session info: chrome=131.0.6778.109): Hello Aman, share this practice page and share your knowledge
+Build info: version: '4.26.0', revision: '69f9e5e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [782ab4c914c9b2955e1b7897c4e13d83, findElement {value=//input[@id='confirmbtn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\lmmeh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64093/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 782ab4c914c9b2955e1b7897c4e13d83
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at lab.lab9TestNgAssig.handleC0nfirm(lab9TestNgAssig.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- handleAlert -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:39 EST" name="teardown" finished-at="2024-12-09T00:08:40 EST" duration-ms="302" status="PASS">
+        </test-method> <!-- handleC0nfirm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:57:10 EST" name="teardown" finished-at="2024-12-09T00:57:10 EST" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="beforeTestCode()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:40 EST" name="beforeTestCode" finished-at="2024-12-09T00:08:46 EST" duration-ms="6871" status="PASS">
+        <test-method is-config="true" signature="beforeTestCode()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:57:10 EST" name="beforeTestCode" finished-at="2024-12-09T00:57:20 EST" duration-ms="9439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestCode -->
-        <test-method signature="handleConfirm()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:46 EST" name="handleConfirm" finished-at="2024-12-09T00:08:49 EST" duration-ms="2917" status="PASS">
+        <test-method signature="handleConfirm()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:57:20 EST" name="handleConfirm" finished-at="2024-12-09T00:57:20 EST" duration-ms="11" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Hello Aman, share this practice page and share your knowledge}
+  (Session info: chrome=131.0.6778.109): Hello Aman, share this practice page and share your knowledge
+Build info: version: '4.26.0', revision: '69f9e5e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ade26e36ebe9bc250a50e9cb4b1dcc5, findElement {value=//input[@id='confirmbtn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\lmmeh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64139/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ade26e36ebe9bc250a50e9cb4b1dcc5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Hello Aman, share this practice page and share your knowledge}
+  (Session info: chrome=131.0.6778.109): Hello Aman, share this practice page and share your knowledge
+Build info: version: '4.26.0', revision: '69f9e5e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ade26e36ebe9bc250a50e9cb4b1dcc5, findElement {value=//input[@id='confirmbtn'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\lmmeh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64139}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64139/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ade26e36ebe9bc250a50e9cb4b1dcc5
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at lab.lab9TestNgAssig.handleConfirm(lab9TestNgAssig.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleConfirm -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:49 EST" name="teardown" finished-at="2024-12-09T00:08:50 EST" duration-ms="335" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:57:20 EST" name="teardown" finished-at="2024-12-09T00:57:20 EST" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterTestteardown()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:50 EST" name="afterTestteardown" finished-at="2024-12-09T00:08:50 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTestteardown()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:57:20 EST" name="afterTestteardown" finished-at="2024-12-09T00:57:20 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestteardown -->

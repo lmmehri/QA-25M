@@ -5,6 +5,7 @@
     <classes>
       <class name="lab.lab9TestNgAssig">
         <methods>
+          <include name="handleC0nfirm"/>
           <include name="beforeTestsetup"/>
           <include name="handleConfirm"/>
           <include name="teardown"/>
