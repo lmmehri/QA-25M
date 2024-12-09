@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-09T00:08:29 EST" name="Default suite" finished-at="2024-12-09T00:08:50 EST" duration-ms="20737">
+    <groups>
+    </groups>
+    <test started-at="2024-12-09T00:08:29 EST" name="Default test" finished-at="2024-12-09T00:08:50 EST" duration-ms="20737">
+      <class name="lab.lab9TestNgAssig">
+        <test-method is-config="true" signature="beforeTestsetup()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:29 EST" name="beforeTestsetup" finished-at="2024-12-09T00:08:29 EST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestsetup -->
+        <test-method is-config="true" signature="beforeTestCode()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:29 EST" name="beforeTestCode" finished-at="2024-12-09T00:08:36 EST" duration-ms="7253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCode -->
+        <test-method signature="handleAlert()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:36 EST" name="handleAlert" finished-at="2024-12-09T00:08:39 EST" duration-ms="2918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:39 EST" name="teardown" finished-at="2024-12-09T00:08:40 EST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="beforeTestCode()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:40 EST" name="beforeTestCode" finished-at="2024-12-09T00:08:46 EST" duration-ms="6871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestCode -->
+        <test-method signature="handleConfirm()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:46 EST" name="handleConfirm" finished-at="2024-12-09T00:08:49 EST" duration-ms="2917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleConfirm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:49 EST" name="teardown" finished-at="2024-12-09T00:08:50 EST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="afterTestteardown()[pri:0, instance:lab.lab9TestNgAssig@402c4085]" started-at="2024-12-09T00:08:50 EST" name="afterTestteardown" finished-at="2024-12-09T00:08:50 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestteardown -->
+      </class> <!-- lab.lab9TestNgAssig -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
