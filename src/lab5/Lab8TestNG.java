@@ -13,24 +13,19 @@ public class Lab8TestNG {
 	WebDriver driver;
 
 	@BeforeTest
-	public void beforeTestsetup() {
-		System.out.println("intialize the browser and other setup");
-	}
-	@AfterTest
-	public void afterTestteardown() {
-		System.out.println("Test completed");
-
-}
-		
-	@BeforeMethod
 	public void beforeTestCode() {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\lmmeh\\OneDrive\\Desktop\\QA_24\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
 		driver =new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-		
+		driver.manage().window().maximize();		
 	}
+	@AfterTest
+	public void afterTestteardown() {
+		System.out.println("Test completed");
+}
 		
-	
+	@BeforeMethod
+		
 	@Test    
 	public void handleAlert() throws InterruptedException {
 			        // Type name in the name field
@@ -47,9 +42,10 @@ public class Lab8TestNG {
         Thread.sleep(2000);
 
         // Accept the alert
-        driver.switchTo().alert().accept();                    
-	}
-	
+       
+        driver.switchTo().alert().accept(); 
+        Thread.sleep(2000);
+        }
 	@AfterMethod
 	public void teardown() {
 		driver.quit();

@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">  <!-- test scenario -->
+ <!-- BeforeTest -->
   <test thread-count="5" name="Test">
     <classes>
       <class name="lab5.Lab7">
+    <!-- BeforeMethod -->  
    <methods>
    <include name="showmessage1"/>
    <include name="showmessage2"/>
    <exclude name="showmessage3"/>
    <exclude name="showmessage4"/>
    
-   </methods> 
+   </methods>
+   <!-- AfterMethod --> 
    </class> 
    
       <class name="lab5.Lab7"/>
       
     </classes>
   </test> <!-- Test -->
+  <!-- AfterTest -->
 </suite> <!-- Suite -->

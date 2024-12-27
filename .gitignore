@@ -1,0 +1,4 @@
+target/
+node_modules/
+apache-maven-3.9.9/
+bin/
