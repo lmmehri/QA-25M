@@ -33,7 +33,12 @@ describe('Test confirm', () => {
         expect(amount).to.be.equal('32') 
 
      })     
-    
+     cy.get('.tableFixHead > #product > tbody > :nth-child(5) > :nth-child(4)').eq($index).prev().then(function(amountIndex) {
+        const amount = amountIndex.text() 
+        
+        expect(amount).to.be.equal('Pune') 
+
+     }) 
       }
   })
 })
