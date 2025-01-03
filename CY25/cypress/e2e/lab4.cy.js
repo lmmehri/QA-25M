@@ -7,7 +7,7 @@ describe('Test Alert,Table andMouse hover', () => {
         expect(str).to.be.equal("Hello , share this practice page and share your knowledge")
       })
     });
-    it.only('Test Table',() =>{
+    it('Test Table',() =>{
       cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
       cy.get('tr td:nth-child(2)').each(($el,$index, $list ) =>{
         const txt =$el.text()
@@ -28,4 +28,17 @@ describe('Test Alert,Table andMouse hover', () => {
     });
 })
 })
-    //it('Test mouse hover( =>))
+    it.only('Test mouse hover',() => {
+        cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
+
+        //invoke show
+       // cy.get(".mouse-hover .mouse-hover-content").invoke('show')
+        //cy.wait(400)
+        //cy.contains('Top').click()
+       // cy.url().should('include','top')
+
+        //force :true
+        cy.contains('Top').click({force:true})
+        cy.url().should('include','top')
+
+    })
