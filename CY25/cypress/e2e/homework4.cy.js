@@ -13,7 +13,12 @@ describe('Fixture' ,() => {
         cy.get(':nth-child(1) > .form-control').type(myd.name)
         cy.get(':nth-child(2) > .form-control').type(myd.email)
         cy.get(':nth-child(3) > .form-control').type(myd.password)
+        cy.get('#exampleCheck1').check()
         cy.get('#exampleFormControlSelect1').select(myd.gender[0])
+        cy.get('[for="exampleFormControlRadio1"]')
+        cy.get('#inlineRadio2').check()
+          .should('be.checked')
+          .and('have.value','option2')
         cy.get(':nth-child(8) > .form-control').type(myd.dateofbirth)
         cy.get('.btn').click();
         cy.scrollTo('top');
