@@ -1,29 +1,33 @@
-import login from "./pom/login";
-import Reg from "./pom/regisration";
+
+import myReg from "./pom/myregistration";
 describe('test POM',() => {
-    let b
+    let a
     before(()=>{
         cy.fixture('mydata').then((mydata) =>{
-            b = mydata
+            a = mydata
         })
     })
     
     it('test data',() =>{
         cy.visit('https://rahulshettyacademy.com/angularpractice/')
-        const  register=new Reg()
-       // register.getName().type("Kebede")
-       // register.getemail().type('kebe12@gmail.com')
-       register.getName().type(b.Name)
-       register.getemail().type(b.email)
-       register.getpassword().type(b.password)
-       registery.getcheckbox().check
-       register.getgender().select(b)
-       register.getstatus().check
-       register.getdateofbirth().type(b.dateofbirt)
+        const  register=new myReg()
 
-       const lp =new login()
-        lp.display()
-       
+       register.getName().type(a.name)
+       register.getEmail().type(a.email)
+       register.getpassword().type(a.password)
+       if(a.loveicecream){
+           register.getcheckbox().check()
+       }
+       register.getgender().select(a.gender)
+       if(a.employmentStatus === "Employed"){
+           register.getEmployedStatus().check()
+       }
+            
+       register.getdateofbirth().type(a.dateofbirth)
+
+       register.submit().click();
+        
+       register.getSubmitSuccessMessage().contains("The Form has been submitted successfully!");
     }
     );
 }) 

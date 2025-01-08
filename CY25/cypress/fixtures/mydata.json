@@ -3,8 +3,9 @@
     "name": "Mehret G",
     "email" : "mey2012@gmail.com",
     "password": "123456",
-    "gender" : ["Female" ,"Male"],
-    "employmentStatus":["Student","Employed"," unemployed"],
+    "loveicecream": true,
+    "gender" : "Female" ,
+    "employmentStatus":"Employed",
     "dateofbirth" :"2000-02-01"
 
 }

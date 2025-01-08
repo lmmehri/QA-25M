@@ -1,4 +1,4 @@
-class MyReg{
+class Reg{
 
     getName(){
         return cy.get(':nth-child(1) > .form-control')
@@ -12,4 +12,4 @@ class MyReg{
 
 
 
-export default MyRegReg;
+export default Reg;
