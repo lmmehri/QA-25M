@@ -18,7 +18,7 @@ describe('test POM',() => {
        if(a.loveicecream){
            register.getcheckbox().check()
        }
-       register.getgender().select(a.gender)
+       register.getgender().select(a.gender[0])
        if(a.employmentStatus === "Employed"){
            register.getEmployedStatus().check()
        }
